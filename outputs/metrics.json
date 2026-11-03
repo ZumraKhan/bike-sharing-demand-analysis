@@ -1,0 +1,174 @@
+{
+  "quality": {
+    "hourly_rows": 17379,
+    "daily_rows": 731,
+    "columns": 29,
+    "date_start": "2011-01-01",
+    "date_end": "2012-12-31",
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "duplicate_timestamps": 0,
+    "expected_hours": 17544,
+    "missing_hours": 165,
+    "coverage_pct": 99.06,
+    "cnt_equals_casual_plus_registered": true,
+    "zero_demand_hours": 0
+  },
+  "descriptive": {
+    "total_rentals": 3292679,
+    "rentals_2011": 1243103,
+    "rentals_2012": 2049576,
+    "yoy_growth_pct": 64.9,
+    "mean_hourly": 189.5,
+    "median_hourly": 142.0,
+    "std_hourly": 181.4,
+    "min_hourly": 1,
+    "max_hourly": 977,
+    "skewness": 1.28,
+    "kurtosis": 1.42,
+    "cv_pct": 95.7,
+    "mean_daily": 4504.3,
+    "max_daily": 8714,
+    "max_daily_date": "2012-09-15",
+    "min_daily": 22,
+    "min_daily_date": "2012-10-29",
+    "registered_share_pct": 81.2,
+    "casual_share_pct": 18.8,
+    "peak_hour": 17,
+    "peak_hour_mean": 461.5,
+    "trough_hour": 4,
+    "trough_hour_mean": 6.4,
+    "peak_to_trough_ratio": 72.6,
+    "workingday_peak_hour": 17,
+    "workingday_peak_mean": 525.3,
+    "workingday_am_peak_hour": 8,
+    "workingday_am_peak_mean": 477.0,
+    "workingday_trough_hour": 3,
+    "workingday_trough_mean": 4.9,
+    "workingday_peak_to_trough": 106.3,
+    "weekend_peak_hour": 13,
+    "weekend_peak_mean": 372.7,
+    "best_season": "Fall",
+    "best_season_mean": 236.0,
+    "worst_season": "Spring",
+    "worst_season_mean": 111.1,
+    "clear_weather_mean": 204.9,
+    "heavy_weather_mean": 74.3,
+    "weather_drop_pct": 63.7,
+    "workingday_mean": 193.2,
+    "weekend_mean": 181.4,
+    "corr_temp": 0.405,
+    "corr_atemp": 0.401,
+    "corr_humidity": -0.323,
+    "corr_wind": 0.093,
+    "corr_hour": 0.394,
+    "casual_share_weekend_pct": 31.7,
+    "casual_share_working_pct": 13.2
+  },
+  "predictive": {
+    "results": {
+      "Linear Regression": {
+        "rmse": 133.8192189817656,
+        "mae": 98.6905370626526,
+        "r2": 0.6316339439023231
+      },
+      "Decision Tree": {
+        "rmse": 86.00615846364938,
+        "mae": 56.183912396117826,
+        "r2": 0.8478395715043692
+      },
+      "Random Forest": {
+        "rmse": 72.26602520090991,
+        "mae": 47.419137791347076,
+        "r2": 0.8925736156343833
+      },
+      "Gradient Boosting": {
+        "rmse": 62.28314727538427,
+        "mae": 40.00847108601566,
+        "r2": 0.9202035220619935
+      },
+      "Baseline (train mean)": {
+        "rmse": 232.60837481037086,
+        "mae": 174.98460136882977,
+        "r2": -0.11299526466191145
+      }
+    },
+    "random_results": {
+      "Linear Regression": {
+        "rmse": 97.75248241662038,
+        "mae": 69.21839887239412,
+        "r2": 0.6982338957457257
+      },
+      "Decision Tree": {
+        "rmse": 54.367022703847056,
+        "mae": 33.12473668571278,
+        "r2": 0.9066560946808985
+      },
+      "Random Forest": {
+        "rmse": 41.3201084281721,
+        "mae": 24.588054032295116,
+        "r2": 0.9460815038094829
+      },
+      "Gradient Boosting": {
+        "rmse": 38.03541219276841,
+        "mae": 23.160068984274215,
+        "r2": 0.9543131600186036
+      }
+    },
+    "best_model": "Gradient Boosting",
+    "best_rmse": 62.28314727538427,
+    "best_mae": 40.00847108601566,
+    "best_r2": 0.9202035220619935,
+    "baseline_rmse": 232.60837481037086,
+    "rmse_vs_baseline_pct": 73.2,
+    "cv_rmse_folds": [
+      61.2,
+      51.2,
+      114.8,
+      66.5,
+      69.2
+    ],
+    "cv_rmse_mean": 72.6,
+    "cv_rmse_std": 22.0,
+    "train_rows": 13903,
+    "test_rows": 3476,
+    "train_end": "2012-08-07",
+    "test_start": "2012-08-07",
+    "test_end": "2012-12-31",
+    "n_features": 18,
+    "top_features": [
+      [
+        "Hour of day",
+        0.3835
+      ],
+      [
+        "Hour (sine)",
+        0.1573
+      ],
+      [
+        "Feels-like temp",
+        0.0888
+      ],
+      [
+        "Temperature",
+        0.0761
+      ],
+      [
+        "Year",
+        0.0696
+      ],
+      [
+        "Hour (cosine)",
+        0.0682
+      ],
+      [
+        "Working-day flag",
+        0.0604
+      ],
+      [
+        "Humidity",
+        0.0246
+      ]
+    ]
+  }
+}

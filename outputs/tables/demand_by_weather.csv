@@ -1,0 +1,5 @@
+weather_name,count,mean,median,std,max
+Clear / Few clouds,11413,204.9,159.0,189.5,977
+Heavy rain / snow,3,74.3,36.0,77.9,164
+Light snow or rain,1419,111.6,63.0,133.8,891
+Mist / Cloudy,4544,175.2,133.0,165.4,957

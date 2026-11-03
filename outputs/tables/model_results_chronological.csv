@@ -1,0 +1,6 @@
+,rmse,mae,r2
+Linear Regression,133.819,98.691,0.632
+Decision Tree,86.006,56.184,0.848
+Random Forest,72.266,47.419,0.893
+Gradient Boosting,62.283,40.008,0.92
+Baseline (train mean),232.608,174.985,-0.113
